@@ -1,0 +1,19 @@
+Data: 10101010
+
+CS   : LOW
+SCLK : Clock pulses
+MOSI : 1 0 1 0 1 0 1 0
+BUSY : HIGH
+DONE : LOW
+
+After 8 bits:
+
+CS   : HIGH
+BUSY : LOW
+DONE : HIGH
+
+Then the second data byte is transmitted:
+
+Data: 11001100
+
+MOSI : 1 1 0 0 1 1 0 0
